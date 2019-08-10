@@ -1,0 +1,19 @@
+package com.recursion.toi;
+
+public class TowerOfHanoi {
+	
+	public static void TowerOfHanoiPrint(int n, char A, char B, char C) {
+		if(n == 1) {
+			return;
+		} else {
+			TowerOfHanoiPrint(n-1, 'A','B','C');
+			TowerOfHanoiPrint(n-1, 'A','B','C');
+		}
+	}
+	
+	public static void main(String args[]) {
+		int n = 4;
+		TowerOfHanoiPrint(n,'A','B','C');
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.design.builder;
+
+public class Wrapper implements Packing{
+	public String price() {
+		System.out.println("price is 100");
+		return "100";
+	}
+
+}

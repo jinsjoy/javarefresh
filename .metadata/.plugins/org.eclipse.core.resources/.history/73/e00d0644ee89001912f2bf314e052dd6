@@ -1,0 +1,50 @@
+package com.traversal.binarytree;
+
+public class BSTInsertion {
+
+	
+	public class Node {		
+		int key;
+		Node left = null;
+		Node Right = null;
+	}
+	
+	Node root;
+	
+	BSTInsertion(){
+		root = null;
+	}
+	
+	public void insertRec(Node node, int data) {
+		if(node == null) {
+			return;
+		}
+		if(node.key > data) {
+		   node = node.Right;
+		   insertRec(node, data);
+		}
+		else {
+		   node = node.left;
+		   insertRec(node, data);
+		} 
+		
+		Node newNode = new Node();
+		newNode.key = data;
+		
+	}
+	
+	public void insert(int data) {
+		insertRec(root, data);
+		
+	}
+	
+	public static void main(String args[]) {
+		BSTInsertion tree = new BSTInsertion();
+		tree.insert(20);
+		tree.insert(4);
+		tree.insert(17);
+		tree.insert(98);
+		tree.insert(32);
+		tree.insert(12);
+	}
+}

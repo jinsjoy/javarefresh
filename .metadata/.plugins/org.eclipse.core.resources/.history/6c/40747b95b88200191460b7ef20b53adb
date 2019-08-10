@@ -1,0 +1,17 @@
+package com.recursion.simple;
+
+public class Fibonacci {
+	
+static int fibonacii(int n) {
+	if(n >= 3) {
+		return fibonacii(n-1) + fibonacii(n-2);
+	} else {
+	return 1;
+	}	
+	
+}
+	
+public static void main(String args[]) {
+	System.out.println(fibonacii(8));	
+}
+}

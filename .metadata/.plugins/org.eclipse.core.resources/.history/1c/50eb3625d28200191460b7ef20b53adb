@@ -1,0 +1,20 @@
+package com.recursion.simple;
+
+public class Fibonacci {
+	
+static int fibonacii(int n) {
+	if(n >= 3) {
+		return fibonacii(n-1) + fibonacii(n-2);
+	} else {
+	return 1;
+	}	
+	
+}
+	
+public static void main(String args[]) {
+	
+	for(int i =1 ;i< 10; i++)
+	fibonacii(i);	
+	//System.out.println(fibonacii(i));	
+}
+}

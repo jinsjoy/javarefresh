@@ -1,0 +1,12 @@
+package com.recursion.simple;
+
+public class Fibonacci {
+	
+public static void main(String args[] {
+	int first = 1, second =2;
+	int n = 200;
+	fibonacii(first,second,n);
+	
+})	
+
+}
